@@ -2,9 +2,10 @@ import React, { Component } from 'react'
 
 export class CounterRenderPropsMain extends Component {
 
-    constructor(props) {
-        super(props)
     
+    constructor(props) {        
+        super(props)
+            
         this.state = {
           count: 0
         }
@@ -28,4 +29,4 @@ export class CounterRenderPropsMain extends Component {
 }
 
 export default CounterRenderPropsMain
-
+ 
