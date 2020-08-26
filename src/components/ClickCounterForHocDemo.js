@@ -1,32 +1,19 @@
 import React, { Component } from 'react'
+import UpdatedComponent from './withCounter'
 
 export class ClickCounterForHocDemo extends Component {
 
-    constructor(props) {
-        super(props)
     
-        this.state = {
-             count: 0
-        }
-
-        this.incrementCounter = this.incrementCounter.bind(this)
-    }
-
-    incrementCounter(){
-        this.setState( prevState => ({
-            count: prevState.count + 1
-        }))
-    }
-    
-
+    /* Constructor and the incremenetCounter function has been pushed to the HOC  */
+    //n=2
     render() {
         return (
             <div>
-                {this.state.count} <br />
-                <button onClick={this.incrementCounter}> Click to increase count </button>
+                {this.props.count} <br />
+        <button onClick={this.props.incrementCounter}> {this.props.name} Click to increase count </button>
             </div>
         )
     }
 }
 
-export default ClickCounterForHocDemo
+export default UpdatedComponent(ClickCounterForHocDemo, 2) 
