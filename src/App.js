@@ -1,16 +1,12 @@
 import React, { Fragment } from 'react';
 import './App.css';
-import C from './components/ComponentC'
-import { UserProvider } from './components/UserContext'
-
+import ListOfPosts from './components/PostPostsThroughAxios'
 
 function App() {
 
   return (
     <div className="App">
-      <UserProvider value="Aiswarya">
-        <C> </C>
-      </UserProvider>
+      <ListOfPosts> </ListOfPosts>
     </div>
 
   );
