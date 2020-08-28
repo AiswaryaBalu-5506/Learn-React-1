@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import './App.css';
-import Form from './components/FormValidationFormik'
+import StateiftUpMain from './components/StateiftUpMain'
 
 function App() {
 
   return (
     <div className="App">
-      <Form> </Form>
+      <StateiftUpMain></StateiftUpMain>
     </div>
 
   );
