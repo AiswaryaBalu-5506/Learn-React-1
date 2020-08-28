@@ -1,12 +1,12 @@
 import React, { Fragment } from 'react';
 import './App.css';
-import ListOfPosts from './components/PostPostsThroughAxios'
+import Form from './components/FormValidationFormik'
 
 function App() {
 
   return (
     <div className="App">
-      <ListOfPosts> </ListOfPosts>
+      <Form> </Form>
     </div>
 
   );
